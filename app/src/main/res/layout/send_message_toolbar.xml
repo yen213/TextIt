@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Toolbar that is shown in the Send Messages Activity. Has the chat room's photo and name -->
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_black"
+    android:paddingTop="8dp"
+    android:paddingBottom="4dp"
+    app:elevation="4dp"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/chat_txt_view_toolbar"
+            style="@style/white_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_toEndOf="@id/chat_img_view_toolbar"
+            android:layout_toRightOf="@id/chat_img_view_toolbar"
+            android:ellipsize="end"
+            android:maxWidth="220dp"
+            android:maxLines="1"
+            tools:text="@string/string_chat_pic" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/chat_img_view_toolbar"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/string_chat_pic"
+            android:src="@drawable/no_image" />
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

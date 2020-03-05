@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Red color -->
+    <color name="red">#cc0000</color>
+
+    <!-- Light blue color -->
+    <color name="light_blue">#2197C1</color>
+
+    <!-- Light black color -->
+    <color name="light_black">#2b2b2b</color>
+
+    <!-- White color -->
+    <color name="white">#FFFFFF</color>
+
+    <!-- Transparent color -->
+    <color name="transparent">#00000000</color>
+
+    <!-- Mostly black color -->
+    <color name="mostly_black">#1D1D1D</color>
+
+    <!-- Gray color -->
+    <color name="gray">#3C3B3B</color>
+
+    <!-- Light gray color -->
+    <color name="light_gray">#858585</color>
+
+    <!-- Light red color -->
+    <color name="light_red">#F44E4E</color>
+</resources>

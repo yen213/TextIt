@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Screen that shows a Users name, picture, and email address. If two Users are friends, they
+ can message each other from here or create a group message. If they are not friends, they can
+send a friend request to that User. -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_black"
+    android:padding="@dimen/layout_padding">
+
+    <ProgressBar
+        android:id="@+id/progress_bar_display_info"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="12dp"
+        android:indeterminateDrawable="@drawable/circular_progress"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/msg_or_add_button_info_activity"
+        style="@style/button_states_text_style"
+        android:layout_width="240dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/email_txt_view_info_activity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/button_state_backgrounds"
+        android:clickable="true"
+        android:drawableStart="@drawable/add_friend_icon"
+        android:drawableLeft="@drawable/add_friend_icon"
+        android:focusable="true"
+        android:gravity="center"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="@string/string_add_friend"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/group_message_button_info_activity"
+        style="@style/button_states_text_style"
+        android:layout_width="240dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/msg_or_add_button_info_activity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_state_backgrounds"
+        android:clickable="true"
+        android:drawableStart="@drawable/people_icon"
+        android:drawableLeft="@drawable/people_icon"
+        android:focusable="true"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="@string/string_group_message"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/search_edit_text_info_activity"
+        style="@style/black_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/edit_text_background"
+        android:drawableStart="@drawable/search_icon"
+        android:drawableLeft="@drawable/search_icon"
+        android:drawablePadding="8dp"
+        android:fontFamily="sans-serif"
+        android:hint="@string/string_enter_email"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:textColorHint="@color/light_black" />
+
+    <TextView
+        android:id="@+id/name_txt_view_info_activity"
+        style="@style/white_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_img_view_display_info_activity"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="28dp"
+        android:textSize="24sp"
+        tools:text="@string/string_name" />
+
+    <TextView
+        android:id="@+id/email_txt_view_info_activity"
+        style="@style/white_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_txt_view_info_activity"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"
+        tools:text="@string/string_email" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_img_view_display_info_activity"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="132dp"
+        android:src="@drawable/no_image" />
+
+    <TextView
+        android:id="@+id/no_user_found_info_activity"
+        style="@style/white_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/string_no_user_found"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+
+</RelativeLayout>

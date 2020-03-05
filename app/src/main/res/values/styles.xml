@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <item name="colorPrimary">@color/light_black</item>
+        <item name="colorPrimaryDark">@color/mostly_black</item>
+        <item name="colorAccent">@color/mostly_black</item>
+        <item name="android:buttonStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+    <!-- Style for black text on a white background -->
+    <style name="black_text_style">
+        <item name="android:textColor">@color/mostly_black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!-- Style for white text on a black background -->
+    <style name="white_text_style">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!-- Button text style for different button states -->
+    <style name="button_states_text_style">
+        <item name="android:textColor">@drawable/button_text_colors</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- Style for TextViews in the Settings Activity -->
+    <style name="settings_text_view">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+
+    <!-- Alert Dialog title theme -->
+    <style name="alert_dialog_title" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/mostly_black</item>
+    </style>
+
+    <!-- Error text style for TextInputLayouts -->
+    <style name="text_input_layout_error" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/light_red</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- Style for TextInput layouts -->
+    <style name="text_input_layout_style">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Style for EditTexts within the TextInputLayouts -->
+    <style name="edit_text_style">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+</resources>

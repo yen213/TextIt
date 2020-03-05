@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Name of the application -->
+    <string name="app_name">TextIt</string>
+
+    <!-- Description for the app logo -->
+    <string name="logo_description">App logo</string>
+
+    <!-- Email text -->
+    <string name="string_email">Email</string>
+
+    <!-- Password text -->
+    <string name="string_password">Password</string>
+
+    <!-- Current password text -->
+    <string name="string_current_password">Current password</string>
+
+    <!-- Login text -->
+    <string name="string_login">Login</string>
+
+    <!-- Forgot password text -->
+    <string name="string_forgot_password">Forgot Password?</string>
+
+    <!-- Sign up text -->
+    <string name="string_sign_up">Don\'t have an account? Sign Up</string>
+
+    <!-- Re-enter password text -->
+    <string name="string_re_enter_password">Re-enter Password</string>
+
+    <!-- Password complexity info: length requirement -->
+    <string name="string_length_req">
+        \u2022 \t Must contain at least 8 characters
+    </string>
+
+    <!-- Password complexity info: uppercase requirement -->
+    <string name="string_uppercase_req">
+        \u2022 \t Must contain at least 1 UPPERCASE character
+    </string>
+
+    <!-- Password complexity info: lowercase requirement -->
+    <string name="string_lowercase_req">
+        \u2022 \t Must contain at least 1 LOWERCASE \n\t  character
+    </string>
+
+    <!-- Password complexity info: number requirement -->
+    <string name="string_number_req">
+        \u2022 \t Must contain at least 1 Number
+    </string>
+
+    <!-- Password complexity info: special characters requirement -->
+    <string name="string_special_req">
+        \u2022 \t Must contain at least 1 special character \n\t(!,@,#,$,…)
+    </string>
+
+    <!-- Create account text  -->
+    <string name="string_create_account">Create Account</string>
+
+    <!-- First name text  -->
+    <string name="string_first_name">First Name</string>
+
+    <!-- Last name text -->
+    <string name="string_last_name">Last Name</string>
+
+    <!-- Age text  -->
+    <string name="string_age">Age</string>
+
+    <!-- Date of birth text -->
+    <string name="string_dob">Date of Birth</string>
+
+    <!-- Save text -->
+    <string name="string_save">Save</string>
+
+    <!-- Chat text -->
+    <string name="string_chat">Chat</string>
+
+    <!-- Group chat text -->
+    <string name="string_group_chat">Group Chat</string>
+
+    <!-- Friends text -->
+    <string name="string_friends">Friends</string>
+
+    <!-- My profile text -->
+    <string name="string_my_profile">My Profile</string>
+
+    <!-- Name text -->
+    <string name="string_name">Name</string>
+
+    <!-- Latest message text -->
+    <string name="string_latest_message">Latest message</string>
+
+    <!-- Date text -->
+    <string name="string_date">Date</string>
+
+    <!-- Sign out text -->
+    <string name="string_sign_out">Sign Out</string>
+
+    <!-- Type a message text -->
+    <string name="string_type_msg">Type a Message…</string>
+
+    <!-- Send button in Send Message activity description text -->
+    <string name="string_send_button">Button user presses to send message</string>
+
+    <!-- Example time text -->
+    <string name="string_time_ex">12:30 PM</string>
+
+    <!-- Update information text -->
+    <string name="string_update_info">Update Information</string>
+
+    <!-- Change password text -->
+    <string name="string_change_password">Change Password</string>
+
+    <!-- New password text -->
+    <string name="string_new_password">New Password</string>
+
+    <!-- Save changes text -->
+    <string name="string_save_changes">Save Changes</string>
+
+    <!-- Add friend text -->
+    <string name="string_add_friend">Add Friend</string>
+
+    <!-- Settings text -->
+    <string name="string_settings">Settings</string>
+
+    <!-- Search text -->
+    <string name="string_search">Search</string>
+
+    <!-- Message text -->
+    <string name="string_message">Message</string>
+
+    <!-- Enter email address text -->
+    <string name="string_enter_email">Enter email address…</string>
+
+    <!-- Send Email button text -->
+    <string name="string_send_email">Send Email</string>
+
+    <!-- Upload icon description text -->
+    <string name="string_upload_description">Upload icon</string>
+
+    <!-- Change group name text -->
+    <string name="string_change_group_name">Change Group Name</string>
+
+    <!-- Leave group text -->
+    <string name="string_leave_group">Leave Group</string>
+
+    <!-- Group members text -->
+    <string name="string_group_member">Members</string>
+
+    <!-- Add member text -->
+    <string name="string_add_member">Add Member</string>
+
+    <!-- Edit chat name text -->
+    <string name="string_edit_chat_name">Edit Chat Name</string>
+
+    <!-- Description of the picture that appears in messages screen toolbar -->
+    <string name="string_chat_pic">Chat toolbar picture</string>
+
+    <!-- Friend requests text -->
+    <string name="string_friend_reqs">Friend Requests</string>
+
+    <!-- No new friend requests text -->
+    <string name="string_no_friend_reqs">No new friend requests</string>
+
+    <!-- No User found text -->
+    <string name="string_no_user_found">No User found matching this email address</string>
+
+    <!-- Add text -->
+    <string name="string_add">Add</string>
+    <!--Accept text -->
+    <string name="string_accept">Accept</string>
+
+    <!-- Decline text -->
+    <string name="string_decline">Decline</string>
+
+    <!-- Continue text -->
+    <string name="string_continue">Continue</string>
+
+    <!-- Sent on text -->
+    <string name="string_sent_on">Sent on</string>
+
+    <!-- No messages text -->
+    <string name="string_no_messages">No messages, add friends and start chatting now!</string>
+
+    <!-- No Friends text -->
+    <string name="string_no_friends">Friend list empty, search and add friends now!</string>
+
+    <!-- Create group text -->
+    <string name="string_group_message">Create Group</string>
+
+    <!-- Delete icon description text -->
+    <string name="string_delete_icon">Delete icon that gets displayed when User swipes on
+        RecyclerView.</string>
+
+    <!-- Title text for the dialog that appears after swiping left on a conversation -->
+    <string name="string_title_delete_convo">Delete Conversation?</string>
+
+    <!-- Title text for the dialog that appears after swiping left on a friend -->
+    <string name="string_title_delete_friend">Delete Friend?</string>
+
+    <!-- Cancel text -->
+    <string name="string_cancel">Cancel</string>
+
+    <!-- Delete text -->
+    <string name="string_delete">Delete</string>
+
+    <!-- Body text of deleting a chat item dialog -->
+    <string name="string_body_delete_chat">Are you sure you want to delete your copy of the
+        conversation? You cannot view this conversation history after.</string>
+</resources>

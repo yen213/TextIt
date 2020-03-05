@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Screens where Users can send messages to each other or groups -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mostly_black">
+
+    <include
+        android:id="@+id/toolbar_send_msg_activity"
+        layout="@layout/send_message_toolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/messages_recycler_view_send_msg_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/chat_box_layout_send_msg_activity"
+        android:layout_below="@+id/toolbar_send_msg_activity"
+        android:padding="4dp" />
+
+    <LinearLayout
+        android:id="@+id/chat_box_layout_send_msg_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_black"
+        android:minHeight="48dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/type_msg_edit_txt_send_msg_activity"
+            style="@style/white_text_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background_white"
+            android:gravity="center_vertical"
+            android:hint="@string/string_type_msg"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine|textCapSentences|textAutoCorrect|textAutoComplete"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="0dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="8dp"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@drawable/cursor_color_white"
+            app:backgroundTint="@color/gray" />
+
+        <ImageButton
+            android:id="@+id/send_button_send_msg_activity"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/string_send_button"
+            android:gravity="center"
+            android:src="@drawable/send_img" />
+
+    </LinearLayout>
+
+</RelativeLayout>

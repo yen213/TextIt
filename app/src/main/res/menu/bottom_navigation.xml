@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The list of items in the Bottom Navigation menu. User's can navigate to their chat messages,
+group chat messages, or friends list from here. -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/chat_home"
+        android:icon="@drawable/chat"
+        android:title="@string/string_chat" />
+    <item
+        android:id="@+id/group_message_home"
+        android:icon="@drawable/group"
+        android:title="@string/string_group_chat" />
+    <item
+        android:id="@+id/friends_home"
+        android:icon="@drawable/person"
+        android:title="@string/string_friends" />
+</menu>

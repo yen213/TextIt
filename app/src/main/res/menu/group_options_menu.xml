@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Toolbar options menu that is displayed in a Group Chat activity. Contains options to add new
+group members, see the list of members, or leave the group  -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/add_group_member_options_menu"
+        android:title="@string/string_add_member" />
+    <item
+        android:id="@+id/group_members_options_menu"
+        android:title="@string/string_group_member" />
+    <item
+        android:id="@+id/leave_group_options_menu"
+        android:title="@string/string_leave_group" />
+</menu>

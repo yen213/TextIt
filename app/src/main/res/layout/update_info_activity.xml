@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Screen where New Users enter their basic information when they are first signing up for the
+app or for logged in Users choosing to update their basic information !-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="4dp">
+
+        <Button
+            android:id="@+id/save_button_update_info_screen"
+            style="@style/button_states_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dob_txt_view_update_info_screen"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="56dp"
+            android:background="@drawable/button_state_backgrounds"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/string_save" />
+
+        <FrameLayout
+            android:id="@+id/frame_layout_update_info_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_img_view_update_info_screen"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:src="@drawable/no_image" />
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/oval"
+                android:contentDescription="@string/string_upload_description"
+                android:src="@drawable/upload_icon" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/dob_txt_view_update_info_screen"
+            style="@style/white_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/age_txt_in_layout_update_info_screen"
+            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/calendar"
+            android:drawableLeft="@drawable/calendar"
+            android:drawablePadding="16dp"
+            android:gravity="center"
+            android:hint="@string/string_dob"
+            android:textColorHint="@color/white" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/f_name_txt_in_layout_update_info_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/frame_layout_update_info_screen"
+            android:padding="4dp"
+            android:theme="@style/text_input_layout_style"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/text_input_layout_error">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/f_name_txt_in_edit_txt_update_info_screen"
+                style="@style/edit_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/string_first_name"
+                android:inputType="text|textCapWords"
+                android:paddingStart="8dp"
+                android:paddingLeft="8dp"
+                android:paddingEnd="0dp"
+                android:paddingRight="0dp"
+                app:backgroundTint="@color/white" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/l_name_txt_in_layout_update_info_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/f_name_txt_in_layout_update_info_screen"
+            android:layout_marginTop="12dp"
+            android:padding="4dp"
+            android:theme="@style/text_input_layout_style"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/text_input_layout_error">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/l_name_txt_in_edit_txt_update_info_screen"
+                style="@style/edit_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/string_last_name"
+                android:inputType="text|textCapWords"
+                android:paddingStart="8dp"
+                android:paddingLeft="8dp"
+                android:paddingEnd="0dp"
+                android:paddingRight="0dp"
+                app:backgroundTint="@color/white" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/age_txt_in_layout_update_info_screen"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/l_name_txt_in_layout_update_info_screen"
+            android:layout_marginTop="12dp"
+            android:padding="4dp"
+            android:theme="@style/text_input_layout_style"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/text_input_layout_error">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/age_txt_in_edit_txt_update_info_screen"
+                style="@style/edit_text_style"
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/string_age"
+                android:inputType="number"
+                android:maxLength="2"
+                android:paddingStart="8dp"
+                android:paddingLeft="8dp"
+                android:paddingEnd="0dp"
+                android:paddingRight="0dp"
+                app:backgroundTint="@color/white" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

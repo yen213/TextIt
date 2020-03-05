@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Log in screen of the App. Users can log in to use the app from here, go to the sign up screen,
+or the password recovery screen -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_black"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/login_button_login_screen"
+            style="@style/button_states_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_below="@id/forgot_password_txt_view_login_screen"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/button_state_backgrounds"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/string_login"
+            android:textAllCaps="false" />
+
+        <ImageView
+            android:id="@+id/logo_img_view_login_screen"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/logo_description"
+            android:src="@drawable/textit_logo" />
+
+        <TextView
+            android:id="@+id/forgot_password_txt_view_login_screen"
+            style="@style/white_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password_txt_in_layout_login_screen"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/string_forgot_password"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/sign_up_txt_view_login_screen"
+            style="@style/white_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_button_login_screen"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="56dp"
+            android:text="@string/string_sign_up"
+            android:textSize="14sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_txt_in_layout_login_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email_txt_in_layout_login_screen"
+            android:layout_marginTop="16dp"
+            android:padding="4dp"
+            android:theme="@style/text_input_layout_style"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/text_input_layout_error"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@android:color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_txt_in_edit_txt_login_screen"
+                style="@style/edit_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/string_password"
+                android:inputType="textPassword"
+                android:paddingStart="8dp"
+                android:paddingLeft="8dp"
+                android:paddingEnd="0dp"
+                android:paddingRight="0dp"
+                app:backgroundTint="@color/white" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_txt_in_layout_login_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo_img_view_login_screen"
+            android:padding="4dp"
+            android:theme="@style/text_input_layout_style"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/text_input_layout_error">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_txt_in_edit_txt_login_screen"
+                style="@style/edit_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/string_email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="8dp"
+                android:paddingLeft="8dp"
+                android:paddingEnd="0dp"
+                android:paddingRight="0dp"
+                app:backgroundTint="@android:color/white" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

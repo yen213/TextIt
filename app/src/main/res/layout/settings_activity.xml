@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Settings screen where Users can log out of the App or go to their update basic information
+screen.-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_black"
+    android:orientation="vertical"
+    android:padding="@dimen/layout_padding">
+
+    <TextView
+        android:id="@+id/update_info_txt_view_settings_activity"
+        style="@style/settings_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:drawableStart="@drawable/update_info_icon"
+        android:drawableLeft="@drawable/update_info_icon"
+        android:drawablePadding="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/string_update_info"
+        app:drawableTint="@android:color/white" />
+
+    <TextView
+        android:id="@+id/change_password_txt_view_settings_activity"
+        style="@style/settings_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:drawableStart="@drawable/change_password"
+        android:drawableLeft="@drawable/change_password"
+        android:drawablePadding="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/string_change_password"
+        app:drawableTint="@android:color/white" />
+
+    <TextView
+        android:id="@+id/sign_out_txt_view_settings_activity"
+        style="@style/settings_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:drawableStart="@drawable/log_out_icon"
+        android:drawableLeft="@drawable/log_out_icon"
+        android:drawablePadding="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/string_sign_out"
+        app:drawableTint="@android:color/white" />
+
+</LinearLayout>
