@@ -10,3 +10,5 @@ database and updating the UI accordingly.
 <p align="center">
   <img src="demos/main_demo.gif" width="220" height="450">
 </p>
+
+More demos of the app can be found [here](demos)
